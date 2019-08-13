@@ -33,9 +33,13 @@ ul li {
 .portfolio {
   padding: 10vh 20px;
   max-width: 1050px;
-  margin: auto;
-  display: flex;
-  align-items: flex-start; }
+  margin: auto; }
+  .portfolio__wrapper {
+    display: flex;
+    align-items: flex-start; }
+    @media (max-width: 540px) {
+      .portfolio__wrapper {
+        flex-direction: column; } }
   .portfolio__aside {
     flex: 1; }
     .portfolio__aside_img {
@@ -88,6 +92,5 @@ ul li {
     @media (max-width: 440px) {
       .portfolio__dream {
         padding: 15px 20px 20px 15px; } }
-  @media (max-width: 540px) {
-    .portfolio {
-      flex-direction: column; } }
+  .portfolio__projects_item {
+    margin-bottom: 25px; }

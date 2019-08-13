@@ -45,8 +45,15 @@ ul {
     padding: 10vh 20px;    
     max-width: 1050px;
     margin: auto;
-    display: flex;
-    align-items: flex-start;    
+    
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+
+        @media (max-width: 540px) {
+            flex-direction: column;
+        }
+    }
 
     &__aside {
         flex: 1;
@@ -124,8 +131,12 @@ ul {
             padding: 15px 20px 20px 15px;
         }
     }
+    
+    &__projects {
 
-    @media (max-width: 540px) {
-        flex-direction: column;
+        &_item {
+            margin-bottom: 25px;
+        }
+        
     }
 }
