@@ -1,0 +1,127 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #4f86e1;
+    text-decoration: none;
+    border-bottom: 1px solid #4f86e1;
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-bottom: 1px solid transparent;
+    }
+
+    @media (max-width: 740px) {
+        font-size: 16px;
+        line-height: 1em;
+    }
+}
+
+small {
+    color: #a0a0a0;
+}
+
+ul {
+    li {
+        margin-bottom: 20px;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.portfolio {
+    padding: 10vh 20px;    
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;    
+
+    &__aside {
+        flex: 1;
+
+        &_img {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+
+            img {
+                max-width: 100%;                
+                height: auto;
+                display: block;
+            }
+
+            @media (max-width: 740px) {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        
+        @media (max-width: 540px) {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__contacts {
+        padding-left: 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 14px;
+
+            @media (max-width: 740px) {
+                margin-bottom: 10px;
+            }
+        }        
+    }
+
+    &__description {
+        flex: 2;
+        font-size: 18px;
+        line-height: 1.5em;
+
+        &_name {
+            margin-bottom: 40px;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 740px) {
+            font-size: 16px;
+            line-height: 1.3em;
+        }
+    }
+
+    &__dream {
+        padding: 25px 90px 20px 20px;
+        margin: 40px 0;
+        font-weight: 500;
+        border: 3px dashed #4f86e1;
+        
+        &-red {
+            font-size: 14px;
+            border-color: #d45843;
+        }
+
+        @media (max-width: 440px) {
+            padding: 15px 20px 20px 15px;
+        }
+    }
+
+    @media (max-width: 540px) {
+        flex-direction: column;
+    }
+}
