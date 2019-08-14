@@ -61,6 +61,10 @@ ul li {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap; } }
+    @media (max-width: 375px) {
+      .portfolio__aside {
+        flex-direction: column;
+        align-items: flex-start; } }
   .portfolio__contacts {
     padding-left: 0;
     list-style: none; }
@@ -93,4 +97,6 @@ ul li {
       .portfolio__dream {
         padding: 15px 20px 20px 15px; } }
   .portfolio__projects_item {
-    margin-bottom: 25px; }
+    padding: 10px 0;
+    margin-bottom: 25px;
+    border-bottom: 2px dashed #ccc; }
